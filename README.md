@@ -47,7 +47,53 @@ Acesse o dashboard interativo no Power BI:
 - **Visualizações:** Analise eficiência, comparação entre programado e realizado, Pareto de paradas e OEE.  
 - **Interatividade:** Passe o mouse sobre os gráficos para ver detalhes e métricas específicas.  
 
+![Exemplo de Dashboard](Produção.PNG)
 
+---
+
+## 📐 Métricas e Fórmulas DAX Utilizadas
+
+### 🔸 Horas Trabalhadas
+```DAX
+Horas Trabalhadas = SUM('Produção'[Horas_Trab])
+```
+
+### 🔸 Horas Paradas
+```DAX
+Horas Paradas = SUM('Produção'[Horas_Paradas])
+```
+
+### 🔸 Eficiência
+```DAX
+Eficiência = DIVIDE([Horas Trabalhadas], [Horas Disponíveis], 0)
+```
+
+### 🔸 OEE (Overall Equipment Effectiveness)
+```DAX
+OEE = [Disponibilidade] * [Performance] * [Qualidade]
+```
+
+### 🔸 Disponibilidade
+```DAX
+Disponibilidade = DIVIDE([Horas Trabalhadas], [Horas Disponíveis], 0)
+```
+
+### 🔸 Performance
+```DAX
+Performance = DIVIDE([Produção Real], [Produção Teórica], 0)
+```
+
+### 🔸 Qualidade
+```DAX
+Qualidade = DIVIDE([Produção Boa], [Produção Total], 0)
+```
+
+---
+
+## 🖼️ Imagens e Exemplos Visuais
+
+### Exemplo de Dashboard Completo  
+![Dashboard Semanal de Produção](Produção.PNG)
 
 ---
 
