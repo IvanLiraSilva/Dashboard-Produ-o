@@ -47,7 +47,7 @@ Acesse o dashboard interativo no Power BI:
 - **Visualizações:** Analise eficiência, comparação entre programado e realizado, Pareto de paradas e OEE.  
 - **Interatividade:** Passe o mouse sobre os gráficos para ver detalhes e métricas específicas.  
 
-![Exemplo de Dashboard](Produção.PNG)
+
 
 ---
 
@@ -55,47 +55,52 @@ Acesse o dashboard interativo no Power BI:
 
 ### 🔸 Horas Trabalhadas
 ```DAX
-Horas Trabalhadas = SUM('Produção'[Horas_Trab])
-```
-
-### 🔸 Horas Paradas
-```DAX
-Horas Paradas = SUM('Produção'[Horas_Paradas])
+Horas Trabalhadas = SUM('Produção Semana 39'[Horas Disponíveis]) - [Tempo Parada Filtrado]
 ```
 
 ### 🔸 Eficiência
 ```DAX
-Eficiência = DIVIDE([Horas Trabalhadas], [Horas Disponíveis], 0)
+Eficiência = SUM('Produção Semana 39'[Media p/ min]) / (SUM(Capacidade[Pcts p/ minutos]) * [Total Dias])
 ```
 
 ### 🔸 OEE (Overall Equipment Effectiveness)
 ```DAX
-OEE = [Disponibilidade] * [Performance] * [Qualidade]
+OEE = 
+DIVIDE(
+    [Disponibilidade] * [Performance] * [Qualidade],
+    1
+)
 ```
 
 ### 🔸 Disponibilidade
 ```DAX
-Disponibilidade = DIVIDE([Horas Trabalhadas], [Horas Disponíveis], 0)
+Disponibilidade = 
+DIVIDE(
+    [Horas Trabalhadas],
+    SUM('Produção Semana 39'[Horas Disponíveis])
+)
 ```
 
 ### 🔸 Performance
 ```DAX
-Performance = DIVIDE([Produção Real], [Produção Teórica], 0)
+Performance = 
+DIVIDE(
+    SUM('Produção Semana 39'[Produção Real]),
+    SUM('Produção Semana 39'[Capacidade Nominal])
+)
 ```
 
 ### 🔸 Qualidade
 ```DAX
-Qualidade = DIVIDE([Produção Boa], [Produção Total], 0)
+Qualidade = 
+DIVIDE(
+    SUM('Produção Semana 39'[Defeito]),
+    SUM('Produção Semana 39'[Produção Real]
+))
 ```
 
 ---
-
-## 🖼️ Imagens e Exemplos Visuais
-
-### Exemplo de Dashboard Completo  
-![Dashboard Semanal de Produção](Produção.PNG)
-
----
+--
 
 ## 💡 Resultados e Insights
 
