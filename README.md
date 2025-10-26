@@ -47,7 +47,7 @@ Acesse o dashboard interativo no Power BI:
 - **Visualizações:** Analise eficiência, comparação entre programado e realizado, Pareto de paradas e OEE.  
 - **Interatividade:** Passe o mouse sobre os gráficos para ver detalhes e métricas específicas.  
 
-![Exemplo de Dashboard](Produção.png)
+
 
 ---
 
