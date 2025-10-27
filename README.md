@@ -1,4 +1,4 @@
-# 📊 Dashboard Semanal de Produção
+# 📊 Dashboard de Produção
 
 Este repositório contém o **Dashboard Semanal de Produção**, criado no **Power BI**, que permite acompanhar os principais indicadores de desempenho de produção de forma interativa.  
 
