@@ -1,6 +1,6 @@
 # 📊 Dashboard de Produção
 
-Este repositório contém o **Dashboard Semanal de Produção**, criado no **Power BI**, que permite acompanhar os principais indicadores de desempenho de produção de forma interativa.  
+Este repositório contém o **Dashboard  de Produção**, criado no **Power BI**, que permite acompanhar os principais indicadores de desempenho de produção de forma interativa.  
 
 O painel inclui métricas como **Horas Trabalhadas**, **Horas Paradas**, **Eficiência**, **OEE (Overall Equipment Effectiveness)** e outros dados cruciais para monitorar o processo produtivo.
 
@@ -37,7 +37,7 @@ O dashboard é interativo e permite que você filtre os dados de acordo com:
 ## 🔗 Link para o Dashboard
 
 Acesse o dashboard interativo no Power BI:  
-👉 [**Dashboard Semanal de Produção**](https://app.powerbi.com/view?r=eyJrIjoiMDMyN2YyNmUtYTFlMy00ZDAwLTlhNzQtOTU3OWI3OTQ4MDFmIiwidCI6IjNiNjhjOWQ3LWMxNzEtNDcxNi1hZGViLWRkOTY5YWYyNmI1NyJ9)
+👉 [**Dashboard  de Produção**](https://app.powerbi.com/view?r=eyJrIjoiMDMyN2YyNmUtYTFlMy00ZDAwLTlhNzQtOTU3OWI3OTQ4MDFmIiwidCI6IjNiNjhjOWQ3LWMxNzEtNDcxNi1hZGViLWRkOTY5YWYyNmI1NyJ9)
 
 ---
 
